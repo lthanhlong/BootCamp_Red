@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit,OnDestroy {
       const provider = new firebase.default.auth.GoogleAuthProvider();
       try{
         await this.auth.signInWithPopup(provider);
-        alert("login successfully");
       }catch(err){
         alert("failed");
       }
@@ -26,9 +25,9 @@ export class NavbarComponent implements OnInit,OnDestroy {
   async logOut(){
     try{
       await this.auth.signOut();
-      alert("Sigout successfully")
+      this.user=null;
     }catch(err){
-      alert("Sigout failed")
+      alert("Sigout failed");
     }
   }
   public user:any;

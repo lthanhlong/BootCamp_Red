@@ -1,11 +1,22 @@
 <mat-toolbar>
-  <span>Flying Bird</span>
+  <span>
+    <div class="example-button-container">
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button style="margin-left: 4%;"mat-stroked-button>Home</button>
+      <button style="margin-left: 4%;"mat-stroked-button>Flying Bird</button>
+      <button style="margin-left: 4%;"mat-stroked-button>Caro</button>
+      <button style="margin-left: 4%;"mat-stroked-button>Quiz</button>
+      <button style="margin-left: 4%;"mat-stroked-button>Choose</button>
+    </div>
+  </span>
   <span class="example-spacer"></span>
-  <img *ngIf="this.user"  style="width: 50px;border-radius: 50%;" [src]="user.photoURL" >
-  <div class="example-button-row" >
-    <button *ngIf="!this.user" (click)="logIn()" mat-raised-button color="primary">Login</button>
-    <button *ngIf="this.user" (click)="logOut()" mat-raised-button color="primary">Logout</button>
 
+  <div class="example-button-row" >
+    <button *ngIf="!this.user" (click)="logIn()" mat-raised-button color="primary">Sign In</button>
+    <button *ngIf="this.user" (click)="logOut()" mat-raised-button color="primary">Sign Out</button>
   </div>
+  <img *ngIf="this.user"  style="width: 50px;border-radius: 50%;" [src]="user.photoURL" >
 
 </mat-toolbar>
