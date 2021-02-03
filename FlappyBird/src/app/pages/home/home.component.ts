@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, query, style, animate, group } from '@angular/animations';
+import { trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -13,20 +13,14 @@ import { trigger, transition, query, style, animate, group } from '@angular/anim
 export class HomeComponent implements OnInit {
   counter: number = 0;
   images = [
-    'https://placeimg.com/300/300/nature/6',
-    'https://placeimg.com/300/300/nature/7',
-    'https://placeimg.com/300/300/nature/8',
-    'https://placeimg.com/300/300/nature/9',
-    'https://placeimg.com/300/300/nature/2',
-    'https://placeimg.com/300/300/nature/3',
-    'https://placeimg.com/300/300/nature/1',
+    '../../../assets/yellowbird-upflap.gif',
+
   ];
   
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
-
   onNext() {
     if (this.counter != this.images.length - 1) {
       this.counter++;
