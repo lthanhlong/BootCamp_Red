@@ -35,7 +35,6 @@ export class NavbarComponent implements OnInit,OnDestroy {
     this.auth.authState.subscribe((user) => {
       if (user) {
         this.user = user
-        console.log(this.user.email)
       }
     })
   }
