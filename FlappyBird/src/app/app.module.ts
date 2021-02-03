@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { AngularFireModule, FirebaseApp } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import {AngularFireAuthModule} from '@angular/fire/auth';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
