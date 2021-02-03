@@ -1,13 +1,28 @@
-.Title {
+.Title{
+    text-align: center;
     position: absolute;
-    left: 50%;
-    margin-left: -160px;
+	left: 50%;
+	margin-left: -160px;
 }
+
+
+.background{
+    width: 100%;
+    height:78%;
+}
+.back{
+    background-image: url("../../../assets/background-night.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
 .Character {
     position: absolute;
-    left: 50%;
-    margin-left: -0px;
-    // margin-left: 30px;
+	left: 50%;
+    margin-left: -80px;
+    margin-top: 20%;
+    width: 35%;
 }
 .button {
     box-shadow: inset 0px 1px 0px 0px #a4e271;
@@ -48,9 +63,3 @@
         }
     }
 }
-
-// .Canvas {
-//     border:solid black;
-//     width: 288px;
-//     height: 512px;
-// }
