@@ -42,17 +42,24 @@ export class GameComponent implements OnInit ,AfterViewInit{
     let bY = 150;
     let gravity = 10;
     let constant = 320 + gap;
+
+    // pipe coordinates
     let pipe = [];
     let state = "";
     pipe[0] = {
       x: 288,
       y: Math.floor(Math.random() * pipeNorth.height) - pipeNorth.height
     }
+
+
+    // on key down
     document.addEventListener("mousedown", moveUp);
     function moveUp() {
       bY -= 50;
       fly.play();
     }
+
+    // draw images
     function draw() {
       ctx.drawImage(bg, 0, 0);
       for (let i = 0; i < pipe.length; i++) {
@@ -66,6 +73,8 @@ export class GameComponent implements OnInit ,AfterViewInit{
             y: Math.floor(Math.random() * pipeNorth.height) - pipeNorth.height
           })
         }
+
+        // detect collision
         if (bX + bird.width >= pipe[i].x && bX <= pipe[i].x + pipeNorth.width && (bY <= pipe[i].y
           + pipeNorth.height || bY + bird.height >= pipe[i].y + constant) ||
           bY + bird.height >= 515 - fg.height) {
@@ -73,7 +82,7 @@ export class GameComponent implements OnInit ,AfterViewInit{
 
           document.addEventListener("mousedown", startover);
           function startover() {
-            location.reload();
+            location.reload();// reload the page
           }
         }
         if (pipe[i].x == 0 && state == "true") {
