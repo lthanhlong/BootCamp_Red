@@ -19,14 +19,17 @@
     <div class="back">
         <img class="Title" src="../../../assets/flappy-bird.png" width="350px" style="margin-top: 10%;">
         <div class="Character" >
+            <button class="button" type="button" (click)="onPrevious()" [disabled]="counter===0">Up</button>
+            <br>
+            <br>
             <div [@animImageSlider]="counter">
                 <ng-container *ngFor="let img of images; let i=index">
-                    <img [src]="img" style="margin-left: 25%;margin-top: 5%;" *ngIf="i===counter" />
+                    <img [src]="img" style="margin-left: 5%;margin-top: 5%;" *ngIf="i===counter" />
                 </ng-container>
             </div>
-            <button class="button" type="button" (click)="onPrevious()" [disabled]="counter===0">Previous</button>
-            <button class="button" type="button" (click)="onNext()" [disabled]="this.counter == this.images.length - 1">Next</button>
-            <button routerLink="game" class="playbutton" style="background-color:rgba(0,136,148,25);margin-left: 5%;"> <img src="../../../assets/play button.png" style="height: 60px; width: 60px; " > </button>
+            
+            <button class="button" type="button" (click)="onNext()" [disabled]="this.counter == this.images.length - 1">Down</button>
+            <button routerLink="game" class="playbutton" style="background-color:rgba(0,136,148,25);margin-left: 20%;"> <img src="../../../assets/play button.png" style="height: 60px; width: 60px; " > </button>
         </div>
     </div>
     <div class="base"></div>

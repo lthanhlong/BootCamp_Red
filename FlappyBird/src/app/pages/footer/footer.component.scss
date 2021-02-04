@@ -1,45 +1,42 @@
-// .all-browsers {
-//   margin: 0;
-//   padding: 5px;
-//   background-color: lightgray;
-// }
+// // .all-browsers {
+// //   margin: 0;
+// //   padding: 5px;
+// //   background-color: lightgray;
+// // }
 
-// .all-browsers > h1, .browser {
-//   margin: 10px;
-//   padding: 5px;
-// }
+// // .all-browsers > h1, .browser {
+// //   margin: 10px;
+// //   padding: 5px;
+// // }
 
-// .browser {
-//   background: white;
-//   text-align: left;
-// }
+// // .browser {
+// //   background: white;
+// //   text-align: left;
+// // }
 
-// .browser > h2, p {
-//   margin: 4px;
-//   font-size: 90%;
-// }
+// // .browser > h2, p {
+// //   margin: 4px;
+// //   font-size: 90%;
+// // }
 
-// footer {
-//   text-align: center;
-//   padding: 3px;
-//   background-color: DarkSalmon;
-//   color: white;
-// }
-* {margin: 0;padding: 0;}
-body { font-family: arial; font-size: 16px;}
+// // footer {
+// //   text-align: center;
+// //   padding: 3px;
+// //   background-color: DarkSalmon;
+// //   color: white;
+// // }
+// * {margin: 0;padding: 0;}
+// body { font-family: arial; font-size: 16px;}
 
 .clearfix {clear: both;}
 .center {text-align: center;}
 .left {text-align: left;}
 .right {text-align: right;}
 
-.clr1 {background-color: white;}
-.clr2 {background: #F1F3F5; color: #8F94A3;}
-.clr3 {background: #3E4352; color: #BDC3CF;}
-.clr4 {background: #636A7D; color: #E3E7F2;}
-.clr5 {background-color: #F1F3F5;}
-.clr6 {background-color: #39B5A1;}
-.clr7 {background-color: #D45245;}
+
+.clr3 {background:green; color:white;}
+.clr4 {background:white; color: red;}
+
 
 a {color: #BDC3CF; text-decoration: none;}
 a:hover {color: #ffffff; text-decoration: underline;}
@@ -48,9 +45,9 @@ a:hover {color: #ffffff; text-decoration: underline;}
 /*##### Footer Structure #####*/
 .bo-wrap {clear:both; width: auto;}
 .bo-footer {
-  clear:both;
+  // clear:both;
   width: auto;
-  padding: 5px;
+  // padding: 5px;
   width: 960px;
 	margin: 0 auto;
 }
@@ -78,11 +75,11 @@ a:hover {color: #ffffff; text-decoration: underline;}
 	float: left;
   text-align: right;
   font-size: 14px;
-  color: #636A7D;
+  color: white;
   vertical-align: middle;
 }
 
-.bo-footer-copyright {text-align: center; color: #BDC3CF}
+.bo-footer-copyright {text-align: center; color: black}
 
 /*##### Footer Responsive #####*/
 /* for 980px or less */
@@ -138,3 +135,10 @@ a:hover {color: #ffffff; text-decoration: underline;}
 @media screen and (max-width: 480px) {
   
 }
+
+// footer {
+//   text-align: center;
+//   padding: 0.3%;
+//   background-color: DarkSalmon;
+//   color: white;
+// }
